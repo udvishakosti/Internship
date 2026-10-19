@@ -1,7 +1,7 @@
 #Q11 String Validators
 if __name__ == '__main__':
     s = input()
-    print(s.isalnum())
+    print(any(i.isalnum() for i in s))
     print(any(i.isalpha() for i in s))
     print(any(i.isdigit() for i in s))
     print(any(i.islower() for i in s))
